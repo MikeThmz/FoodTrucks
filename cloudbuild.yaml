@@ -2,5 +2,5 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['up', '-d']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['tag', 'foodtrucks:latest', 'gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
-images: ['gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA']
+  args: ['tag', 'foodtrucks:latest', 'gcr.io/$PROJECT_ID/github.com/$REPO_NAME:$COMMIT_SHA']
+images: ['gcr.io/$PROJECT_ID/github.com/$REPO_NAME:$COMMIT_SHA']
