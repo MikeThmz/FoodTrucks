@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request, render_template
 import sys
 import requests
 
-es = Elasticsearch(host='es')
+es = Elasticsearch(host='10.142.0.7')
 
 app = Flask(__name__)
 
@@ -119,4 +119,4 @@ def search():
 if __name__ == "__main__":
     ENVIRONMENT_DEBUG = os.environ.get("DEBUG", False)
     check_and_load_index()
-    app.run(host='0.0.0.0', port=5000, debug=ENVIRONMENT_DEBUG)
+    app.run(host='0.0.0.0', port=80, debug=ENVIRONMENT_DEBUG)

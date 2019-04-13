@@ -4,7 +4,7 @@ var Intro = React.createClass({
     render() {
         return (
         <div className="intro">
-            <h3>About</h3>
+            <h3>Sobre</h3>
             <p>This is a fun application built to accompany the <a href="http://prakhar.me/docker-curriculum">docker curriculum</a> - a comprehensive tutorial on getting started with Docker 
             targeted especially at beginners.</p>
             <p>The app is built with Flask on the backend and Elasticsearch is the engine powering the search.</p>

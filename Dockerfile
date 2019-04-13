@@ -18,7 +18,7 @@ RUN npm run build
 RUN pip install -r requirements.txt
 
 # expose port
-EXPOSE 5000
+EXPOSE 80
 
 # start app
 CMD [ "python", "./app.py" ]

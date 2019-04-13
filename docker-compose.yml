@@ -15,7 +15,7 @@ services:
     depends_on:
       - es
     ports:
-      - 5000:5000
+      - 80:80
     volumes:
       - ./flask-app:/opt/flask-app
 volumes:
